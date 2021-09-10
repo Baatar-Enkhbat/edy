@@ -1,126 +1,105 @@
 <!DOCTYPE html>
-<html lang="jp">
+<html>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>House Concierge | ハウスコンシェルジュ</title>
-
-    <!------------ GOOGLE FONTS ------------>
-    <link href="https://fonts.googleapis.com/css?family=Anton|Cabin|Lato|Fjalla+One|Montserrat|Roboto&display=swap"
-        rel="stylesheet">
-
-    <!------------ FONT AWESOME ------------>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-
-    <!------------ CUSTOM STYLE SHEET ------------>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" media="screen and (max-width: 800px)" href="css/mobile.css">
-</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/mobile.css">
+<title>House Concierge | ハウスコンシェルジュ</title>
 
 <body>
-    <header>
-    <div class="slider">
-        <div class="banner">
-            <div class="navbar">
-                <ul>
-                    <li><a  class="current" href="#">トップ</a></li>
-                    <li><a href="#">販売物件について</a></li>
-                    <li><a href="#">不動産売却</a></li>
-                    <li><a href="#">会社概要</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="slides">
-            <div class="slide">
-                <div class="slide-data">
-                    <div class="logo-3">
-                        <img src="img/logo-3.png" alt="">
-                    </div>
-                    <div class="contact">
-                    <button><a href="#"></a>お問い合わせ <i class="fas fa-arrow-circle-right"></i></button>
-                    </div>
-                </div>
-            </div>
-            <div class="slide">
-                <div class="slide-data">
-                    <div class="logo-3">
-                        <img src="img/logo-3.png" alt="">
-                    </div>
-                    <div class="contact">
-                    <button><a href="#"></a>お問い合わせ <i class="fas fa-arrow-circle-right"></i></button>
-                    </div>
-                </div>
-            </div>
-            <div class="slide">
-                <div class="slide-data">
-                    <div class="logo-3">
-                        <img src="img/logo-3.png" alt="">
-                    </div>
-                    <div class="contact">
-                    <button><a href="#"></a>お問い合わせ <i class="fas fa-arrow-circle-right"></i></button>
-                    </div>
-                </div>
-            </div>
-            <div class="slide">
-                <div class="slide-data">
-                    <div class="logo-3">
-                        <img src="img/logo-3.png" alt="">
-                    </div>
-                    <div class="contact">
-                    <button><a href="#"></a>お問い合わせ <i class="fas fa-arrow-circle-right"></i></button>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-
-        <button class="arrows prev" onclick="plusslide(-1)">
-            <span><i class="fas fa-angle-left"></i></span>
-        </button>
-        <button class="arrows next" onclick="plusslide(1)">
-            <span><i class="fas fa-angle-right"></i></span>
-        </button>
-
-        <div class="dots">
-            <span onclick="currentslide(1)"></span>
-            <span onclick="currentslide(2)"></span>
-            <span onclick="currentslide(3)"></span>
-            <span onclick="currentslide(4)"></span>
-        </div>
+  <header>
+    <div class="menu-toggle" id="hamburger">
+      <i class="fas fa-bars"></i>
     </div>
-    </header>
-    <section>
-        <div class="hero-image">
-            <div class="box"><img src="img/photo-1.jpg" ></div>
-            <div class="box"><img src="img/photo-2.jpg" ></div>
-            <div class="box"><img src="img/photo-3.jpg" ></div>
-            <div class="box"><img src="img/photo-4.jpg" ></div>
-        </div>
-    </section>
-    <footer>
-        <div id="footnav">
-          <div class="logo">
-                <img src="img/logo.png" alt="">
+    <div class="overlay"></div>
+    <div class="container">
+      <nav>
+        <h1 class="brand"><a href="index.html"><span>Ho</span>u<span>se</span><br>Conc<span>i</span>erge</a></h1>
+        <ul>
+          <li><a class="current" href="#">トップ</a></li>
+          <li><a href="#">販売物件について</a></li>
+          <li><a href="#">不動産売却</a></li>
+          <li><a href="#">会社概要</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container-slide">
+
+      <div class="w3-content w3-display-container" style="max-width:1300px">
+        <div class="logo-3">
+          <img src="img/logo-3.png" alt="">
+          <div class="contact">
+            <button><a href="#"></a>お問い合わせ <i class="fas fa-arrow-circle-right"></i></button>
           </div>
-
-             <div class="menu">
-                <ul>
-                    <li><a href="#">トップ</a><h2>home</h2></li>
-                    <li><a href="#">販売物件について</a><h2>Company Profile</h2></li>
-                    <li><a href="#">不動産売却</a><h2>CIC transfer</h2></li>
-                    <li><a href="#">会社概要</a><h2>JICC transfer</h2></li>
-                </ul>
-
-                <div class="loc">
-                <h1>千葉市若葉区高品町1589-11 　TEL／043-497-2977 　FAX／043-497-2978</h1>
-                </div>
-
-             </div>
         </div>
-        <h3>Copyright(C) 2021Landest. All Rights Reserved</h3>
-    </footer>
-    <script src="script.js"></script>
+        <div>
+          <img class="mySlides" src="img/IMG-1.jpg" style="width:100%">
+        </div>
+        <div>
+          <img class="mySlides" src="img/IMG-2.JPG" style="width:100%">
+        </div>
+        <div>
+          <img class="mySlides" src="img/IMG-3.JPG" style="width:100%">
+        </div>
+        <div>
+          <img class="mySlides" src="img/IMG-4.JPG" style="width:100%">
+        </div>
+        <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle"
+          style="width:100%">
+          <div class="arrow">
+            <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+            <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+          </div>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section>
+    <div class="hero-image">
+      <div class="box"><img src="img/photo-1.jpg"></div>
+      <div class="box"><img src="img/photo-2.jpg"></div>
+      <div class="box"><img src="img/photo-3.jpg"></div>
+      <div class="box"><img src="img/photo-4.jpg"></div>
+    </div>
+  </section>
+  <footer>
+    <div id="footnav">
+      <div class="logo">
+        <img src="img/logo.png" alt="">
+      </div>
+
+      <div class="menu">
+        <ul>
+          <li><a href="#">トップ</a>
+            <h2>home</h2>
+          </li>
+          <li><a href="#">販売物件について</a>
+            <h2>Company Profile</h2>
+          </li>
+          <li><a href="#">不動産売却</a>
+            <h2>CIC transfer</h2>
+          </li>
+          <li><a href="#">会社概要</a>
+            <h2>JICC transfer</h2>
+          </li>
+        </ul>
+
+        <div class="loc">
+          <h1>千葉市若葉区高品町1589-11 　TEL／043-497-2977 　FAX／043-497-2978</h1>
+        </div>
+
+      </div>
+    </div>
+    <h3>Copyright(C) 2021Landest. All Rights Reserved</h3>
+  </footer>
+  <script src="java.js"></script>
 </body>
 
 </html>

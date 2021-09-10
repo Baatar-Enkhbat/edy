@@ -1,85 +1,72 @@
-.navbar {
-    left: 0;
+@media(max-width: 700px) {
+  .logo-3 {
+    display: grid;
+    position: absolute;
     justify-self: center;
-    width: 100%;
+    left: -10%;
 }
 
-.navbar ul li {
-    margin: 0 20px;
+.logo-3 img {
+    justify-self: center;
+    width: 100px;
+    padding: 0;
 }
 
-.slide {
-    background-position: right;
+.contact {
+    justify-self: center;
+    padding-top: 10px;
+    padding: 2px 4px;
+    width: 90px;
 }
 
-.slide-data {
-    right: 0;
-    justify-content: center;
-    grid-gap: 1.5rem;
+.contact button{
+  font-size: 7px;
 }
-
-.slide-data button {
-    font-size: 1.5rem;
-}
-
-
-#footnav {
+  #footnav {
     grid-template-areas: 
     'logo' 
     'menu' 
     'loc';
-}
-
-.logo {
+  }
+  
+  .logo {
     justify-self: center;
     width: 200px;
-}
-
-.logo-3 {
-    width: 300px;
-    padding: 40px;
-    background: #e95504;
-    opacity: 80%;
-    border-radius: 50%;
-}
-
-.menu ul {
+  }
+  
+  .menu ul {
     padding-top: 0px;
-}
-
-.menu ul li a{
+  }
+  
+  .menu ul li a{
     font-size: 12px;
-}
-
-.menu ul li　h2{
+  }
+  
+  .menu ul li　h2{
     font-size: 8px;
-}
-
-.loc h1 {
+  }
+  
+  .loc h1 {
     font-size: 12px;
-}
+  }
 
+  .navbar ul li {
+      margin: 0 10px;
+  }
 
+  .navbar ul li a {
+      font-size: 0.7rem;
+  }
 
-@media(max-width: 600px) {
+  .logo-3 {
+      width: 200px;
+  }
 
-    .navbar ul li {
-        margin: 0 10px;
-    }
+  .slide-data button {
+      font-size: 1rem;
+  }
 
-    .navbar ul li a {
-        font-size: 0.7rem;
-    }
-
-    .logo-3 {
-        width: 200px;
-    }
-
-    .slide-data button {
-        font-size: 1rem;
-    }
-
-    .menu ul li a{
-        font-size: 10px;
-    }
+  .menu ul li a{
+      font-size: 10px;
+  }
 }
